@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Light-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Light Italic';
+    src: url('Roboto-LightItalic-webfont.woff') format('woff');
+    font-style: Italic;
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Bold';
+    src: url('Roboto-Bold-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+  }
+
+body {
+    background: #e2e7ec;
+    padding: 5%;
+}
+
+.content {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    height: 540px;
+    background: #ffffff;
+}
+
+.item-big {
+    grid-column: 1 / -2;  /* span 2; */
+    background-image: url(images/Layer\ 8.png);
+    padding: 48px;
+    display: grid;
+    align-content: end;
+}
+
+.item-text {
+    padding: 24px;
+}
+
+.item-date {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    color: #818181;
+}
+
+.item-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #1d1d1d;
+}
+
+.item-heading-white {
+    color: white;
+}
+
+@media (max-width: 1023px) {
+    body {
+        padding: 0;
+    }
+}
